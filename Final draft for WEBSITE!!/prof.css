@@ -1,0 +1,113 @@
+/* ... (existing CSS styles) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 40%;
+}
+
+.login-form img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-form .social-media {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.login-form .social-media a {
+    margin: 0 10px;
+    color: #333;
+}
+
+.image-container {
+    width: 60%;
+    text-align: center;
+}
+
+.image-container img {
+    width: 80%;
+}
+/* ... (existing CSS) */
+
+.container {
+    background-image: url('background_bus.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    /* ... */
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.details label {
+    font-weight: bold;
+}
+
+.details input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#bookingHistoryTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#bookingHistoryTable th, #bookingHistoryTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#bookingHistoryTable th {
+    background-color: #f2f2f2;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 1 
+    <title>QuickRide Reservation</title>
+    <link rel="stylesheet" href="reser.css">
+</head>
+<body>
+    <header>
+        <img src="school_bus_icon.png" alt="School Bus Icon">
+        <h1>QuickRide</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <form id="reservationForm">
+                <input type="text" placeholder="Reminders" required>
+                <input type="date" required>
+                <input type="text" placeholder="Origin" required>
+                <input type="text" placeholder="Destination" required>
+                <button type="button" onclick="goBack()">Back</button>
+                <button type="submit">Confirm</button>
+            </form>
+
+            <div class="terminal-information">
+                <h2>Terminal Information</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>City</th>
+                            <th>Terminal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>City A</td>
+                            <td>Terminal A</td>
+                        </tr>
+                        <tr>
+                            <td>City B</td>
+                            <td>Terminal B</td>
+                        </tr>
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

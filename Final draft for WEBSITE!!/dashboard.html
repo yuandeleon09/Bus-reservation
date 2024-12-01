@@ -1,0 +1,54 @@
+<?php
+session_start();
+
+// Redirect to signup.html if the user is not logged in
+if (!isset($_SESSION['email'])) {
+    header("Location: signup.html");
+    exit();
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <h2>Bus Reservation</h2>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="Reservation1.html">Reservations</a></li>
+                <li><a href= "cancel.html">Cancellations</a></li>
+                <li><a href= "inq.html">Inquiries</a></li>
+                <li><a href="acc.html">Accounting</a></li>
+                <li><li><a href="logout.php">Logout</a></li>
+            </li>
+            </ul>
+        </aside>
+
+        <!-- Main Dashboard Area -->
+        <main class="main-content">
+            <header class="top-bar">
+                <h1>Dashboard</h1>
+                <p>Welcome, [Username]</p>
+            </header>
+            <section class="content">
+                <div class="card">Reservations Overview</div>
+                <div class="card">Accounting Overview</div>
+                <div class="card">Latest Inquiries</div>
+                <div class="card">Cancellation Summary</div>
+            </section>
+        </main>
+    </div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>
+

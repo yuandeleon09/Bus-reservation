@@ -1,0 +1,2 @@
+For Database connect sa Xampp ion apache and MySQL Then para maacces ang website dapat yung folder nasa htdocs ng Xampp folder then if hindi mag open yung MySQL sa xampp sa task manager close mo yung mysqld or MySQL then run mo ulit make sure na port 3306 ang gamitin.
+Then sa php admin Local host make a database na name ay login then gawa ng table for users insert ka ng id,fname.lname,email,password Varchar yung apat int nmn yung id then anjan na yung code for php align sa mga Ibang html file.

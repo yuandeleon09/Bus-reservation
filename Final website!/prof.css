@@ -1,0 +1,145 @@
+/* General styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header.top-bar {
+    background-color: #3b8c6b;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+h1 {
+  
+    margin: 0;
+}
+
+.details {
+    margin-top: 20px;
+}
+
+.edit-details {
+    margin-bottom: 20px;
+}
+
+.edit-details label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.edit-details input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#bookingHistoryTable {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#bookingHistoryTable th, #bookingHistoryTable td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#bookingHistoryTable th {
+    background-color: #3b8c6b;
+    color: white;
+}
+
+#bookingHistoryTable td button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#bookingHistoryTable td button:hover {
+    background-color: #c0392b;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button-container button {
+    background-color: #3b8c6b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #2a6d4f;
+}
+
+.button-container a button {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button-container a button:hover {
+    background-color: #e67e22;
+}
+
+#editBtn {
+    background-color: #3498db;
+}
+
+#editBtn:hover {
+    background-color: #2980b9;
+}
+
+#saveChangesBtn {
+    background-color: #2ecc71;
+}
+
+#saveChangesBtn:hover {
+    background-color: #27ae60;
+}
+
+#signOutBtn {
+    background-color: #e74c3c;
+}
+
+#signOutBtn:hover {
+    background-color: #c0392b;
+}

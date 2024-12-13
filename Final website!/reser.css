@@ -1,0 +1,198 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and container styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #c3ec52 0%, #0ba29d 100%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main content container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Header styling */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.top-bar h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: bold;
+}
+
+.top-bar .subtitle {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+}
+
+.top-bar .subtitle img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.top-bar .subtitle span {
+    font-size: 1.2em;
+    color: #f4f4f4;
+}
+
+/* Form Container */
+.form-container {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 70%;
+    margin: auto;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #0ba29d;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #0ba29d;
+}
+
+/* Radio Buttons Styling */
+.form-group label input[type="radio"] {
+    margin-right: 8px;
+}
+
+.form-group label input[type="radio"]:checked {
+    accent-color: #0ba29d;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button[type="button"] {
+    background-color: #007BFF;
+    color: white;
+}
+
+button[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    width: 60%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.modal-content h2 {
+    color: #0ba29d;
+}
+
+.modal-content button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #0ba29d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #008a77;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 20px;
+}

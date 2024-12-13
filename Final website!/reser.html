@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickRide Reservation</title>
+    <link rel="stylesheet" href="reser.css">
+</head>
+<body>
+    <header class="top-bar">
+        <h1>Quickie Ride</h1>
+        <div class="subtitle">
+            <a href="prof.html">
+                <img src="person-icon.png" alt="User Profile" />
+                <span>Welcome, User</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="form-container">
+                <form id="reservationForm">
+                    <h2>Book Your Ride</h2>
+
+                    <div class="form-group">
+                        <label for="name">Customer Name:</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="origin">Origin:</label>
+                        <input type="text" id="origin" placeholder="Enter your starting point" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="destination">Destination:</label>
+                        <input type="text" id="destination" placeholder="Enter your destination" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Select Time:</label>
+                        <select id="time" required>
+                            <option value="" disabled selected>Select Time</option>
+                            <option value="6am">6:00 AM</option>
+                            <option value="9am">9:00 AM</option>
+                            <option value="12pm">12:00 PM</option>
+                            <option value="3pm">3:00 PM</option>
+                            <option value="6pm">6:00 PM</option>
+                            <option value="9pm">9:00 PM</option>
+                            <option value="12am">12:00 AM</option>
+                            <option value="3am">3:00 AM</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="seatNumber">Seat Number:</label>
+                        <input type="number" id="seatNumber" placeholder="Enter Seat Number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="classType">Select Class:</label>
+                        <label>
+                            <input type="radio" name="tripClass" value="economy" checked> Economy
+                        </label>
+                        <label>
+                            <input type="radio" name="tripClass" value="business"> Business
+                        </label>
+                    </div>
+
+                    <div class="button-container">
+                        <button type="button" onclick="goBack()">Back</button>
+                        <button type="submit">Confirm Reservation</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Receipt Modal -->
+        <div id="receiptModal" class="modal">
+            <div class="modal-content">
+                <h2>Reservation Receipt</h2>
+                <p><strong>Transaction ID:</strong> <span id="transactionId"></span></p>
+                <p><strong>Name:</strong> <span id="customerName"></span></p>
+                <p><strong>Origin:</strong> <span id="originPoint"></span></p>
+                <p><strong>Destination:</strong> <span id="destinationPoint"></span></p>
+                <p><strong>Date:</strong> <span id="travelDate"></span></p>
+                <p><strong>Time:</strong> <span id="travelTime"></span></p>
+                <p><strong>Class:</strong> <span id="tripClass"></span></p>
+                <p><strong>Price:</strong> PHP <span id="totalPrice"></span></p>
+                <button onclick="closeModal1()">Close</button>
+                <button onclick="closeModal2()">paynow</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 QuickRide. All Rights Reserved.</p>
+    </footer>
+
+    <script src="reser.js"></script>
+</body>
+</html>

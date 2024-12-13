@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickRide - My Account</title>
+    <link rel="stylesheet" href="prof.css">
+</head>
+<body>
+    <div class="container">
+        <main class="main-content">
+            <header class="top-bar">
+                <h1>Quickie Ride</h1>
+           
+            </header>
+
+            <section class="details">
+                <h2>My Details</h2>
+
+                <!-- Editable Profile Information -->
+                <div class="edit-details">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" value="John" disabled>
+
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" value="Doe" disabled>
+
+                    <label for="email">Gmail:</label>
+                    <input type="email" id="email" value="john.doe@gmail.com" disabled>
+
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" value="123-456-7890" disabled>
+                </div>
+
+                <!-- Booking History -->
+                <label for="bookingHistory">Booking History:</label>
+                <table id="bookingHistoryTable">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Route</th>
+                            <th>Transaction Reference</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dynamic content will go here -->
+                    </tbody>
+                </table>
+
+                <!-- Action Buttons -->
+                <div class="button-container">
+                    <!-- Back Button -->
+                    <a href="dashboard.html">
+                        <button id="backBtn">Back to Dashboard</button>
+                    </a>
+
+                    <!-- Edit Profile Button -->
+                    <button id="editBtn">Edit Profile</button>
+
+                    <!-- Save Changes Button (Initially hidden) -->
+                    <button id="saveChangesBtn" style="display: none;">Save Changes</button>
+
+                    <!-- Sign Out Button -->
+                    <button id="signOutBtn">Sign Out</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="prof.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Bus Reservation System Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2>Bus Reservation System</h2>
+        <ul>
+            <li><a href="dashboard.html">Home <i class="fas fa-home"></i></a></li>
+            <li><a href="reser.html">Reservations <i class="fas fa-ticket-alt"></i></a></li>
+            <li><a href="cancel.html">Cancellations <i class="fas fa-bus"></i></a></li>
+            <li><a href="inq.html">Inquiries <i class="fas fa-road"></i></a></li>
+            <li><a href="acc.html">Accounting<i class="fas fa-user"></i></a></li>
+   
+        </ul>   
+    </nav>
+
+    <!-- Overview Section -->
+    <section class="overview">
+        <div class="card">
+            <h3>Total Bookings</h3>
+            <p id="totalBookings">0</p>
+            <i class="fas fa-ticket-alt icon"></i>
+        </div>
+        <div class="card">
+            <h3>Available Seats</h3>
+            <p id="availableSeats">120</p>
+            <i class="fas fa-chair icon"></i>
+        </div>
+        <div class="card">
+            <h3>Total Revenue</h3>
+            <p id="totalRevenue">$0</p>
+            <i class="fas fa-dollar-sign icon"></i>
+        </div>
+    </section>
+
+    <!-- Reservations Section -->
+    <section id="reservations" class="section">
+        <h2>Manage Reservations</h2>
+        <button id="newBookingBtn" class="btn-primary">New Booking</button>
+        <div class="reservation-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Booking ID</th>
+                        <th>Passenger Name</th>
+                        <th>Bus</th>
+                        <th>Route</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="reservationTable">
+                    <!-- Dynamic Reservation Rows -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+  <!-- Available Buses Section -->
+<section id="availableBuses" class="section">
+    <h2>Available Buses</h2>
+    <ul id="busList">
+        <!-- Dynamic Bus List will be inserted here -->
+    </ul>
+</section>
+
+<!-- Bus Routes Section -->
+<section id="busRoutes" class="section">
+    <h2>Bus Routes</h2>
+    <ul id="routeList">
+        <!-- Dynamic Route List will be inserted here -->
+    </ul>
+</section>
+
+<!-- Passengers Section -->
+<section id="passengers" class="section">
+    <h2>Passenger List</h2>
+    <ul id="passengerList">
+        <!-- Dynamic Passenger List -->
+    </ul>
+</section>
+
+
+  <!-- Modal for New Booking -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>New Booking</h3>
+        <form id="bookingForm">
+            <label for="passengerName">Passenger Name:</label>
+            <input type="text" id="passengerName" required>
+
+            <label for="bus">Select Bus:</label>
+            <select id="bus">
+                <option value="Bus A">Bus A</option>
+                <option value="Bus B">Bus B</option>
+                <option value="Bus C">Bus C</option>
+            </select>
+
+            <label for="route">Select Route:</label>
+            <select id="route">
+                <option value="Route 1">Manila</option>
+                <option value="Route 2">Baguio</option>
+                <option value="Route 3">Cebu</option>
+            </select>
+
+            <!-- New seat selection field -->
+            <label for="seats">Number of Seats:</label>
+            <input type="number" id="seats" min="1" max="10" required>
+
+            <button type="submit" class="btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
